@@ -1,0 +1,42 @@
+name: clef_learner
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+  - assets/images/alto_clef/c3.png
+  - assets/images/alto_clef/d3.png
+  - assets/images/alto_clef/e3.png
+  - assets/images/alto_clef/f3.png
+  - assets/images/alto_clef/g3.png
+  - assets/images/alto_clef/a4.png
+  - assets/images/alto_clef/b4.png
+  - assets/images/alto_clef/c4.png
+  - assets/images/alto_clef/d4.png
+  - assets/images/alto_clef/e4.png
+  - assets/images/alto_clef/f4.png
+  - assets/images/alto_clef/g4.png
+  - assets/images/alto_clef/a5.png
+  - assets/images/alto_clef/b5.png
+  - assets/images/alto_clef/c5.png
+  - assets/images/alto_clef/d5.png
+  - assets/images/alto_clef/e5.png
+
+
+
+
