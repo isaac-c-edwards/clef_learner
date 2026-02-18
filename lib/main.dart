@@ -79,7 +79,7 @@ class _MyWidgetState extends State<MyWidget> {
   final random = Random();
 
   String getRandomNote() {
-    int value = random.nextInt(17);
+    int value = random.nextInt(18);
     switch (value) {
       case 0:
         return "a4";
@@ -115,6 +115,8 @@ class _MyWidgetState extends State<MyWidget> {
         return "g3";
       case 16:
         return "g4";
+      case 17:
+        return "f4";
       default:
         return "";
     }
