@@ -78,48 +78,18 @@ class _MyWidgetState extends State<MyWidget> {
   String feedback2 = "";
   final random = Random();
 
+  final List<String> _notes = [
+    "a4", "a5", "b4", "b5", "c3", "c4", "c5",
+    "d3", "d4", "d5", "e3", "e4", "e5",
+    "f3", "f4", "g3", "g4",
+  ];
+
   String getRandomNote() {
-    int value = random.nextInt(18);
-    switch (value) {
-      case 0:
-        return "a4";
-      case 1:
-        return "a5";
-      case 2:
-        return "b4";
-      case 3:
-        return "b5";
-      case 4:
-        return "c3";
-      case 5:
-        return "c4";
-      case 6:
-        return "c5";
-      case 7:
-        return "d3";
-      case 8:
-        return "d4";
-      case 9:
-        return "d5";
-      case 10:
-        return "e3";
-      case 11:
-        return "e4";
-      case 12:
-        return "e5";
-      case 13:
-        return "f3";
-      case 14:
-        return "g4";
-      case 15:
-        return "g3";
-      case 16:
-        return "g4";
-      case 17:
-        return "f4";
-      default:
-        return "";
-    }
+    String newNote;
+    do {
+      newNote = _notes[random.nextInt(_notes.length)];
+    } while (newNote == currentImageName);
+    return newNote;
   }
 
   void checkAnswer() {
